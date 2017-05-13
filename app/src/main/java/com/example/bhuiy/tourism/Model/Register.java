@@ -1,6 +1,6 @@
 package com.example.bhuiy.tourism.Model;
 
-import java.util.ArrayList;
+import android.graphics.Bitmap;
 
 /**
  * Created by bhuiy on 4/25/2017.
@@ -8,21 +8,22 @@ import java.util.ArrayList;
 
 public class Register {
     private String fullName;
-    private String userName;
     private String password;
     private String emergencyConNo;
     private String address;
-    private int SecurityQuestionId;
-    private int RoleId;
+    private String email;
+    private Bitmap profileImage;
 
-    public Register(String fullName, String userName, String password, String emergencyConNo, String address, int securityQuestionId, int roleId) {
+    public Register(String fullName, String password, String emergencyConNo, String address, String email, Bitmap profileImage) {
         this.fullName = fullName;
-        this.userName = userName;
         this.password = password;
         this.emergencyConNo = emergencyConNo;
         this.address = address;
-        SecurityQuestionId = securityQuestionId;
-        RoleId = roleId;
+        this.email = email;
+        this.profileImage = profileImage;
+    }
+
+    public Register() {
     }
 
     public String getFullName() {
@@ -31,14 +32,6 @@ public class Register {
 
     public void setFullName(String fullName) {
         this.fullName = fullName;
-    }
-
-    public String getUserName() {
-        return userName;
-    }
-
-    public void setUserName(String userName) {
-        this.userName = userName;
     }
 
     public String getPassword() {
@@ -65,24 +58,19 @@ public class Register {
         this.address = address;
     }
 
-    public int getSecurityQuestionId() {
-        return SecurityQuestionId;
+    public String getEmail() {
+        return email;
     }
 
-    public void setSecurityQuestionId(int securityQuestionId) {
-        SecurityQuestionId = securityQuestionId;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
-    public int getRoleId() {
-        return RoleId;
+    public Bitmap getProfileImage() {
+        return profileImage;
     }
 
-    public void setRoleId(int roleId) {
-        RoleId = roleId;
-    }
-
-    public ArrayList<Register> GetAllRegisterdAcc()
-    {
-        return new ArrayList<Register>();
+    public void setProfileImage(Bitmap profileImage) {
+        this.profileImage = profileImage;
     }
 }
