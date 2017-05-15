@@ -7,19 +7,18 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
 
-import com.example.bhuiy.tourism.Api.ApiModel.Data.LogInStatusData;
 import com.example.bhuiy.tourism.R;
 import com.example.bhuiy.tourism.databinding.ActivityLogInBinding;
 
 public class LogInActivity extends AppCompatActivity {
 
     ActivityLogInBinding binding;
-    LogInStatusData logInStatusData;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding= DataBindingUtil.setContentView(this,R.layout.activity_log_in);
-        logInStatusData=new LogInStatusData();
+
     }
 
     public void LogIn(View view) {

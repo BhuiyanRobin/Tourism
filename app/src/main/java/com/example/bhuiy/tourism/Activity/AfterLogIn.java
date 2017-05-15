@@ -14,7 +14,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.example.bhuiy.tourism.Api.ApiModel.Data.TravelEventData;
+
 import com.example.bhuiy.tourism.R;
 
 public class AfterLogIn extends AppCompatActivity
@@ -44,7 +44,7 @@ public class AfterLogIn extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-        TravelEventData data=new TravelEventData();
+
         //data.GetTravelEvent(2,"bhuiyanrobin93@live.com");
     }
 
