@@ -1,5 +1,6 @@
 package com.example.bhuiy.tourism.Activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -44,7 +45,7 @@ public class AfterLogIn extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
         TravelEventData data=new TravelEventData();
-        data.GetTravelEvent(2,"bhuiyanrobin93@live.com");
+        //data.GetTravelEvent(2,"bhuiyanrobin93@live.com");
     }
 
     @Override
@@ -83,12 +84,15 @@ public class AfterLogIn extends AppCompatActivity
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
+        Intent intent;
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
-
+        if (id == R.id.nav_register) {
+           intent=new Intent(this,RegisterActivity.class);
+            startActivity(intent);
+        } else if (id == R.id.nav_login) {
+            intent=new Intent(this,LogInActivity.class);
+            startActivity(intent);
         } else if (id == R.id.nav_slideshow) {
 
         } else if (id == R.id.nav_manage) {

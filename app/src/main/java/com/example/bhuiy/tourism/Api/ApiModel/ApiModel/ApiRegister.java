@@ -28,11 +28,11 @@ public class ApiRegister {
     private String resp;
     public ApiRegister(Context context)
     {
-        Register register=new Register("bhuiyan","123","018765","dhaka","b@live.com");
+        //Register register=new Register("bhuiyan","123","018765","dhaka","b@live.com",null);
        this.context=context;
         Gson gson = new Gson();
         Type type = new TypeToken<Register>() {}.getType();
-         json = gson.toJson(register, type);
+         json = gson.toJson(new Register(), type);
 
         url="http://localhost:41558//api/register";
     }

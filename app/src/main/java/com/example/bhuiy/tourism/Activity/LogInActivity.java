@@ -7,7 +7,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
 
-import com.example.bhuiy.tourism.Api.ApiModel.ApiModel.ApiRegister;
 import com.example.bhuiy.tourism.Api.ApiModel.Data.LogInStatusData;
 import com.example.bhuiy.tourism.R;
 import com.example.bhuiy.tourism.databinding.ActivityLogInBinding;
@@ -25,7 +24,8 @@ public class LogInActivity extends AppCompatActivity {
 
     public void LogIn(View view) {
 
-        boolean isLogIn=logInStatusData.CanBeLog(binding.inputEmail.getText().toString(),binding.inputPassword.getText().toString());
+      //  boolean isLogIn=logInStatusData.CanBeLog(binding.inputEmail.getText().toString(),binding.inputPassword.getText().toString());
+       boolean isLogIn=true;
         if (isLogIn==true)
         {
             Intent intent=new Intent(this,AfterLogIn.class);
@@ -34,9 +34,6 @@ public class LogInActivity extends AppCompatActivity {
         else{
             Toast.makeText(this,"User Name or Password is incorrect",Toast.LENGTH_SHORT).show();
         }
-        ApiRegister register=new ApiRegister(this);
-        register.SaveRegisetr();
-int a=0;
 
     }
 }

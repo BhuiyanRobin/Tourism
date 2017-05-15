@@ -13,17 +13,19 @@ public class Register {
     private String address;
     private String email;
     private Bitmap profileImage;
+    private String imagePath;
 
-    public Register(String fullName, String password, String emergencyConNo, String address, String email, Bitmap profileImage) {
+    public Register() {
+    }
+
+    public Register(String fullName, String password, String emergencyConNo, String address, String email, Bitmap profileImage, String imagePath) {
         this.fullName = fullName;
         this.password = password;
         this.emergencyConNo = emergencyConNo;
         this.address = address;
         this.email = email;
         this.profileImage = profileImage;
-    }
-
-    public Register() {
+        this.imagePath = imagePath;
     }
 
     public String getFullName() {
@@ -72,5 +74,13 @@ public class Register {
 
     public void setProfileImage(Bitmap profileImage) {
         this.profileImage = profileImage;
+    }
+
+    public String getImagePath() {
+        return imagePath;
+    }
+
+    public void setImagePath(String imagePath) {
+        this.imagePath = imagePath;
     }
 }

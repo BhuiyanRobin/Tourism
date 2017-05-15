@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "321325628588",
+    "firebase_url": "https://toursimupdate.firebaseio.com",
+    "project_id": "toursimupdate",
+    "storage_bucket": "toursimupdate.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:321325628588:android:c4ebef4be2b4e2cf",
+        "android_client_info": {
+          "package_name": "com.example.bhuiy.tourism"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "321325628588-dp4s7fe5cfhp160opp97pnvelvncf39m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKtPaTQmnFZmZW2E9v6xvj6aQ0uTjVHOk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
